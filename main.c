@@ -1,13 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include "myport.h"
+
 
 
 int main(int argc, char *argv[])
 {
-    puts("first git push from home!!");
-    for (uint32_t a = 0; a < argc; a++)
-        puts(argv[a]);
-
+    maskOff(PortD,0xFFFF);
+    showPorts();
+    maskOn(PortD,0xABCD);
+    showPorts();
+    
     return 0;
 }
