@@ -341,3 +341,5 @@ void showPorts(void)
     printf("Port D:\n");
     binary_print(&PORT.D,sizeof(PORT.D));
 }
+
+

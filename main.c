@@ -8,6 +8,7 @@
 
 int main(int argc, char *argv[])
 {
+    
     maskOff(PortD,0xFFFF);
     showPorts();
     maskOn(PortD,0xABCD);
