@@ -15,3 +15,6 @@ main.o: main.c myport.h
 
 myport.o: myport.c myport.h
 	${COMPILER} -c myport.c ${CFLAGS}
+
+clean:
+	rm *.o prog
